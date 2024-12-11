@@ -308,12 +308,3 @@ top_failures = failure_predictions.nlargest(25, 'Failure Probability')
 # Display the top 25 most likely failures, showing Product ID, Failure Predicted, and Failure Probability
 st.write("Top 25 Most Likely Machines to Experience a Failure:")
 st.dataframe(top_failures[['Product ID', 'Failure Predicted', 'Failure Probability']])
-
-# Replace 'YOUR_TOKEN' with your actual GitHub personal access token
-g = Github("YOUR_TOKEN")
-
-# Get a specific repository
-repo = g.get_repo("nbuscag1/mgt4170")
-
-# Print the repository's name
-print(repo.name)
