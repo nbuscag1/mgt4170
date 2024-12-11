@@ -20,7 +20,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, log_loss, confusion_matrix, classification_report, roc_auc_score, mean_squared_error
 
 # Load the dataset
-file_path = "C:\Mac\Home\Documents\MGT4170\FinalProject\predictive_maintenance_p1.csv"  # Replace with your file path
+file_path = "predictive_maintenance_p1.csv"  # Replace with your file path
 try:
     # Explicitly specify the data types for each column
     # You may need to adjust the dtypes dictionary based on the actual data types in your CSV
@@ -260,7 +260,7 @@ def predict_failures(input_file, output_file, model):
     print(new_data.describe())
 
 # Predict on new dataset
-input_csv = "C:\Mac\Home\Documents\MGT4170\FinalProject\predictive_maintenance_p2.csv"  # Replace with the path to your new dataset
+input_csv = "predictive_maintenance_p2.csv"  # Replace with the path to your new dataset
 output_csv = "failure_predictions.csv"
 predict_failures(input_csv, output_csv, dt_model)
 
