@@ -310,7 +310,7 @@ st.write("Top 25 Most Likely Machines to Experience a Failure:")
 st.dataframe(top_failures[['Product ID', 'Failure Predicted', 'Failure Probability']])
 
 # Replace 'YOUR_TOKEN' with your actual GitHub personal access token
-g = Github("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")
+g = Github("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")
 
 # Get a specific repository
 repo = g.get_repo("nbuscag1/mgt4170")
